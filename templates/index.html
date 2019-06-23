@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container text-center"
+         style="top:50%;left:50%;position: absolute;transform:translate(-50%, -50%);justify-content:center;align-items:center;margin-right:auto;margin-left:auto;">
+        <div>
+            <blockquote class="blockquote">
+                <p class="mb-0" style="font-family:'Roboto Condensed', sans-serif;font-weight:normal;"><br>“Get Exactly
+                    what
+                    you want. 100% satisfaction guaranteed. Crawl and extract data from any website.”<br></p>
+                <footer class="blockquote-footer">scrapingpros</footer>
+            </blockquote>
+            <form id="search-form" class="search-form" action="{{ url_for('success') }}" method="POST"
+                  autocomplete="off">{{ form.hidden_tag() }}
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text"
+                                                           style="background-color:#3C40C6;color:white;"><i
+                            class="fa fa-search" style="color:white;"></i></span></div>
+                    {{ form.url(class_="form-control", id='input_url', placeholder="I am looking for..",autofocus="") }}
+                    <!--input class="form-control" type="text" placeholder="I am looking for.." autofocus=""-->
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="submit"
+                                style="color:white;background-color:#3C40C6;font-family:Roboto, sans-serif;">Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

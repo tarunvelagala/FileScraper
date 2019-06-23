@@ -1,0 +1,52 @@
+.navbar.navbar-dark.navbar-expand-md.navigation-clean {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.navbar-toggler {
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #3C40C6;
+}
+
+.col-md-4 {
+    align-self: center;
+}
+
+.list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.main_heading {
+    align-self: center;
+    text-align: center;
+}
+
+.main_heading {
+    align-self: center;
+    text-align: center;
+}
+
+#pdfs_div {
+    display: none;
+}
+
+#urls_div {
+    display: block;
+}
+
+#pdfs_div_alp {
+    display: block;
+    margin-top: 20px;
+}
+
+#urls_div_alp {
+    display: block;
+}
+
